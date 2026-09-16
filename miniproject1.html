@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting OSIS 2026</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        #kandidat, #voting {
+            scroll-margin-top: 80px;
+        }
+        /* PERBAIKAN: Menyamakan tinggi gambar kandidat agar sejajar */
+        .card-img-top {
+            height: 300px; /* Anda bisa ubah angkanya (misal 250px) sesuai selera */
+            object-fit: cover;
+            object-position: center;
+        }
+        /* Memastikan card selalu setinggi barisnya */
+        .card {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">VOTING KETOS 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kandidat">Kandidat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#voting">Vote Sekarang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card shadow p-3 border-0 text-center">
+                    <img src="logo osis.png" class="img-fluid mx-auto" alt="Logo OSIS" style="max-height: 150px; width: auto;">
+                </div>
+            </div>
+            <div class="col-md-9 mb-3">
+                <div class="card shadow p-4 bg-primary text-white h-100">
+                    <h2>Selamat Datang di Voting Ketos</h2>
+                    <p>Silakan pilih calon ketua OSIS dengan bijak!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row text-center">
+            <div class="col-md-4 col-6 bg-primary text-white p-3 mt-2 border border-white">AXZEFA MOON</div>
+            <div class="col-md-4 col-6 bg-danger text-white p-3 mt-2 border border-white">BUDI SANTOSO</div>
+            <div class="col-md-4 col-12 bg-warning text-primary p-3 mt-2 border border-white fw-bold">ANDI WIJAYA</div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="kandidat">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 text-center">
+                    <img src="skelar2.jpg" class="card-img-top" alt="Kandidat 1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">CALON 1</h5>
+                        <p>AXZEFA MOON</p>
+                        <button class="btn btn-primary w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#modalVisi">Lihat Visi Misi</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 text-center">
+                    <img src="cwok.jpg" class="card-img-top" alt="Kandidat 2">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">CALON 2</h5>
+                        <p>BUDI SANTOSO</p>
+                        <button class="btn btn-primary w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#modalVisi">Lihat Visi Misi</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card shadow border-0 text-center">
+                    <img src="andi.jpg" class="card-img-top" alt="Kandidat 3">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">CALON 3</h5>
+                        <p>ANDI WIJAYA</p>
+                        <button class="btn btn-primary w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#modalVisi">Lihat Visi Misi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5" id="voting">
+        <div class="card shadow p-4 border-0">
+            <h4 class="mb-3 text-center fw-bold">Form Pemilihan Wajib Diisi</h4>
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Nama Lengkap Siswa</label>
+                    <input type="text" class="form-control"  required>
+                    <div class="invalid-feedback">Nama tidak boleh kosong</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Pilih Calon Ketos</label>
+                    <select class="form-select" required>
+                        <option value="">Klik untuk memilih...</option>
+                        <option value="1">AXZEFA MOON</option>
+                        <option value="2">BUDI SANTOSO</option>
+                        <option value="3">ANDI WIJAYA</option>
+                    </select>
+                    <div class="invalid-feedback">Silakan pilih salah satu calon</div>
+                </div>
+                <button class="btn btn-primary w-100 py-2 fw-bold" type="submit">Submit Suara</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0 fw-light">© 2026 Panitia Pemilihan Ketua OSIS | SMK PGRI 3 MALANG</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalVisi" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Visi Kandidat</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-bold">VISI SETIAP CALON:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>CALON 1:</strong> Meningkatkan kreativitas siswa melalui ekstrakurikuler</li>
+                        <li class="list-group-item"><strong>CALON 2:</strong> Mewujudkan sekolah yang berbasis digital dan inklusif.</li>
+                        <li class="list-group-item"><strong>CALON 3:</strong> Pilih pemimpin yang berintegritas dan kreatif untuk kemajuan sekolah kita. Satu suara sangat berarti.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }    
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "judul": "Laskar Pelangi",
+    "penulis": "Andrea Hirata",
+    "kategori": "Novel",
+    "stok": 5,
+    "status": "Tersedia"
+  },
+  {
+    "id": 2,
+    "judul": "Bumi",
+    "penulis": "Tere Liye",
+    "kategori": "Fantasi",
+    "stok": 3,
+    "status": "Tersedia"
+  },
+  {
+    "id": 3,
+    "judul": "Negeri 5 Menara",
+    "penulis": "Ahmad Fuadi",
+    "kategori": "Novel",
+    "stok": 4,
+    "status": "Tersedia"
+  },
+  {
+    "id": 4,
+    "judul": "Dilan 1990",
+    "penulis": "Pidi Baiq",
+    "kategori": "Romantis",
+    "stok": 2,
+    "status": "Dipinjam"
+  },
+  {
+    "id": 5,
+    "judul": "Ayat-Ayat Cinta",
+    "penulis": "Habiburrahman El Shirazy",
+    "kategori": "Religi",
+    "stok": 6,
+    "status": "Tersedia"
+  },
+  {
+    "id": 6,
+    "judul": "Atomic Habits",
+    "penulis": "James Clear",
+    "kategori": "Pengembangan Diri",
+    "stok": 4,
+    "status": "Tersedia"
+  },
+  {
+    "id": 7,
+    "judul": "Rich Dad Poor Dad",
+    "penulis": "Robert T. Kiyosaki",
+    "kategori": "Keuangan",
+    "stok": 3,
+    "status": "Tersedia"
+  },
+  {
+    "id": 8,
+    "judul": "Filosofi Teras",
+    "penulis": "Henry Manampiring",
+    "kategori": "Psikologi",
+    "stok": 5,
+    "status": "Tersedia"
+  },
+  {
+    "id": 9,
+    "judul": "Harry Potter dan Batu Bertuah",
+    "penulis": "J.K. Rowling",
+    "kategori": "Fantasi",
+    "stok": 2,
+    "status": "Dipinjam"
+  },
+  {
+    "id": 10,
+    "judul": "The Hobbit",
+    "penulis": "J.R.R. Tolkien",
+    "kategori": "Fantasi",
+    "stok": 3,
+    "status": "Tersedia"
+  },
+  {
+    "id": 11,
+    "judul": "Pemrograman PHP Dasar",
+    "penulis": "Jubilee Enterprise",
+    "kategori": "Teknologi",
+    "stok": 7,
+    "status": "Tersedia"
+  },
+  {
+    "id": 12,
+    "judul": "Algoritma dan Pemrograman",
+    "penulis": "Rinaldi Munir",
+    "kategori": "Teknologi",
+    "stok": 4,
+    "status": "Tersedia"
+  },
+  {
+    "id": 13,
+    "judul": "Basis Data",
+    "penulis": "Abdul Kadir",
+    "kategori": "Teknologi",
+    "stok": 3,
+    "status": "Tersedia"
+  },
+  {
+    "id": 14,
+    "judul": "Sejarah Indonesia",
+    "penulis": "Sartono Kartodirdjo",
+    "kategori": "Sejarah",
+    "stok": 5,
+    "status": "Tersedia"
+  },
+  {
+    "id": 15,
+    "judul": "Sapiens",
+    "penulis": "Yuval Noah Harari",
+    "kategori": "Sejarah",
+    "stok": 2,
+    "status": "Dipinjam"
+  }
+]

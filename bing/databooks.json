@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "judul": "Laskar Pelangi",
+    "penulis": "Andrea Hirata",
+    "kategori": "Novel",
+    "stok": 5,
+    "status": "Tersedia"
+  },
+  {
+    "id": 2,
+    "judul": "Bumi",
+    "penulis": "Tere Liye",
+    "kategori": "Fantasi",
+    "stok": 3,
+    "status": "Tersedia"
+  }
+]

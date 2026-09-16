@@ -1,0 +1,30 @@
+:root{
+    --pink:#e83e8c;
+    --pink-dark:#d63384;
+}
+
+body{
+    background:#fff0f6;
+}
+
+.navbar{
+    background:linear-gradient(
+    90deg,
+    var(--pink),
+    var(--pink-dark));
+}
+
+.hero{
+    color:white;
+    text-align:center;
+    padding:100px 0;
+    background:linear-gradient(
+    rgba(232,62,140,.8),
+    rgba(214,51,132,.8));
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+}

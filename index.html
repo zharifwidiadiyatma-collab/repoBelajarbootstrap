@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">WebsitKu</a>
+        </div>
+    </nav>
+
+    <h1>Belajar Bootstrap</h1>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 col-6 bg-primary text-white p-3 mt-2">kolom1</div>
+            <div class="col-md-3 col-6 bg-success text-white p-1 mt-2">kolom2</div>
+            <div class="col-md-3 col-6 bg-danger text-white p-3 mt-2">kolom3</div>
+            <div class="col-md-3 col-6 bg-warning text-primary p-1 mt-2">kolom4</div>
+
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col col-md-3">
+                <div class="card shadow p-3">
+                    <img src="profil.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col col-md-9">
+                <div class="card shadow p-4">
+                    <h1 class="text-center fw-bold p-4">Profil Saya</h1>
+                    <p class="text-muted text-center">Web Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-3 mb-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="iphone17pm.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Iphong 17 ProMAX</h5>
+                        <p class="card-text">50 JUTA RUPIAH</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Beli</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="mobil mahal.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobil Mahal</h5>
+                        <p class="card-text">10M</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Beli</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="rumah gede.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Rumah Mewah</h5>
+                        <p class="card-text">30M</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Beli</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Produk Ini</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <b> EMANG KAMU MAMPU BELI INI?</b>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <form class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label class="form-label">Nama</label>
+                <input type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Nama tidak boleh kosong
+                </div>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="container mt-5">
+        <form class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control" required>
+                <div class="invalid-feedback">
+                    Email wajib diisi dengan format yang benar.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" required>
+                <div class="invalid-feedback">
+                    Password tidak boleh kosong.
+                </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        (() => {
+            'use strict'
+
+            // Ambil semua form yang ingin kita beri validasi Bootstrap
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop form tersebut dan cegah pengiriman jika tidak valid
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>

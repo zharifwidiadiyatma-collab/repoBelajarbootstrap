@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1780438073,
+        "user_id": 1780437723,
+        "user_nama": "zharif",
+        "book_id": 2,
+        "book_judul": "Bumi",
+        "book_penulis": "Tere Liye",
+        "tanggal_pinjam": "2026-06-03",
+        "tanggal_kembali": "2026-06-10",
+        "status": "dikembalikan",
+        "tanggal_aktual": "2026-06-03"
+    }
+]
